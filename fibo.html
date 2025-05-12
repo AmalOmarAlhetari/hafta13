@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <script>
+
+    function basmak(a) {
+        if (a >= 10 && a <= 99 && a % 2 != 0) {
+            console.log("iki basamak", a);
+            return a;
+        } else {
+            return 0;
+        }
+    }
+
+    toplam = 0;
+
+    for (let i = 0; i <= 99; i++) {
+        toplam += basmak(i);
+    }
+
+    console.log("Toplam:", toplam);
+
+ </script>
+</body>
+</html>
