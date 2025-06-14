@@ -6,23 +6,28 @@
 </head>
 <body>
  <script>
-
-    function basmak(a) {
-        if (a >= 10 && a <= 99 && a % 2 != 0) {
-            console.log("iki basamak", a);
-            return a;
-        } else {
-            return 0;
-        }
+  function basmak(a) {
+    if (a >= 10 && a <= 99 && a % 2 != 0) {
+        console.log("iki basamak", a);
+        return a;
+    } else {
+        return 0;
     }
+}
 
-    toplam = 0;
+function fibo(n) {
+    if (n <= 1) return n;
+    return fibo(n - 1) + fibo(n - 2);
+}
 
-    for (let i = 0; i <= 99; i++) {
-        toplam += basmak(i);
-    }
+let toplam = 0;
 
-    console.log("Toplam:", toplam);
+for (let i = 0; i <= 99; i++) {
+    toplam += basmak(i);
+}
+
+console.log("Toplam:", toplam);
+console.log("Fibo(6):", fibo(6));
 
  </script>
 </body>
